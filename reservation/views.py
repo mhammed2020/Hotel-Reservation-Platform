@@ -30,4 +30,4 @@ def list_reservation(request) :
         'reservations':reservations
     }
 
-    return render(request,'reservation/customers.html',context)
+    return render(request,'reservation/reservations.html',context)
