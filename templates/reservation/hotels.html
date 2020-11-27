@@ -6,22 +6,22 @@
 <script>
 
    (function() {
-      angular.module("hotelreservation.angapp",[])
-      .controller('HotelReservation', ['$scope',HotelReservation]) ;
+      angular.module("hotelreservation.angapp",[]).
+      controller("HotelReservation", ["$scope",HotelReservation]) ;
 
 
       function HotelReservation($scope) {
 
          $scope.hotels = [
          {hotel_name : "Retz Carlton", hotel_city : "Casa"},
-         {hotel_name :"Sheraton", hotel_city:"Rabat"}
+         {hotel_name : "Sheraton", hotel_city:"Rabat"},
          ];
       }
 
    })();
 
 </script>
-{% endblock  %}
+{% endblock scripts  %}
 
 
 {% block title %}
@@ -31,13 +31,13 @@ Hotels
 {% block content %}
 
  
-<div ng-app ="hotelreservation.angapp">
+<div ng-app="hotelreservation.angapp">
 
    
    {% verbatim %}
       
       
-   <div ng-controller ="HotelReservation">
+   <div ng-controller="HotelReservation">
 
       <ul>
 
