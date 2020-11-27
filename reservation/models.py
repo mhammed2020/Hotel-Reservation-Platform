@@ -26,4 +26,4 @@ class Reservation(models.Model):
     end_time = models.DateTimeField()
     
     def __str__(self):
-        return self.hotel
+        return str(self.hotel)
