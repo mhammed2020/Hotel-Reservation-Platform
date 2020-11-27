@@ -6,10 +6,10 @@ from django.http import HttpResponse
 from . models import *
 def list_hotels(request) :
 
-    all_hotels = "<ul>"
+    # all_hotels = "<ul>"
 
-    for hotel in Hotel.objects.all() :
-        all_hotels = all_hotels + "<li>" + hotel.hotel_name + "</li>"
-    all_hotels += "</ul>"
+    # for hotel in Hotel.objects.all() :
+    #     all_hotels = all_hotels + "<li>" + hotel.hotel_name + "</li>"
+    # all_hotels += "</ul>"
 
-    return HttpResponse (all_hotels)
+    return render(request,'reservation/index.html',{})
