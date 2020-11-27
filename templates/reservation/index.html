@@ -1,8 +1,7 @@
 
+
+<ol>
 {% for hotel in hotels   %}
- <ul>
-    <h1> {{hotel.hotel_name}} </h1>
-
- </ul> 
+    <li> {{hotel.hotel_name}}  : based on   {{hotel.hotel_city}} </li>
 {% endfor %}
-
+</ol>
