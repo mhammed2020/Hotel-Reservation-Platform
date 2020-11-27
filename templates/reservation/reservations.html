@@ -7,8 +7,16 @@ Reservation Area
    {% endblock title %}
 
 {% block content %}
-    
+     
+<ul>
+    {% for item  in reservations %}
+    <li>
+{{item.hotel.hotel_name}}   for  {{item.customer.name}}
 
-<h2>Reservation List </h2> 
+  </li>
+    {% endfor %}
+
+
+ </ul>
 {% endblock content %}
     
