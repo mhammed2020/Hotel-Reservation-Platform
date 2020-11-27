@@ -20,8 +20,10 @@ class Customer(models.Model):
         return self.name
 
 class Reservation(models.Model):
-    hotel = models.ForeignKey(Hotel)
-    phone_num = models.ForeignKey(Customer)
+    hotel = models.ForeignKey(Hotel, on_delete=models.CASCADE)
+    phone_num = models.ForeignKey(Customer,on_delete=models.CASCADE)
+    start_time = models.DateTimeField()
+    end_time = models.DateTimeField()
     
     def __str__(self):
         return self.hotel
