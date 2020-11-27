@@ -18,8 +18,8 @@
          ];
          $scope.add_new_hotel = function(new_hotel) {
 
-            var hotel = { hotel_name : new_hotel, hotel_city :"Any city"}
-            $scope.hotels.push(hotel)
+            var hotel = { hotel_name : new_hotel, hotel_city :"Any city"} ;
+            $scope.hotels.push(hotel) ;
 
          } ;
       }
@@ -57,7 +57,7 @@ Hotels
          </div>
 
       </ul>
-<input type="text" ng-modul="new_hotel"/>
+<input type="text" ng-model="new_hotel"/>
 <button ng-click="add_new_hotel(new_hotel)">Add </button>
    </div>
    {% endverbatim %}
