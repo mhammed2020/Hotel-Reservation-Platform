@@ -21,3 +21,13 @@ def list_customers(request) :
     }
 
     return render(request,'reservation/customers.html',context)
+
+
+def list_reservation(request) :
+    
+    reservations = Reservation.objects.all() 
+    context = {
+        'reservations':reservations
+    }
+
+    return render(request,'reservation/customers.html',context)
