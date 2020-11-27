@@ -1,5 +1,23 @@
 {% extends 'reservation/base.html' %}
 
+{% block scripts %}
+  
+
+<script>
+
+   (function() {
+      angular.module("hotelreservation.angapp",[])
+      .controller('HotelReservation', ['$scope',HotelReservation]) ;
+
+
+      function HotelReservation($scope) {
+
+      }
+      
+   })();
+
+</script>
+{% endblock  %}
 
 
 {% block title %}

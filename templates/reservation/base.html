@@ -65,6 +65,9 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="{% static 'js/main.js' %}"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+        <script src="{% static 'https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js' %}"></script>
+{% block scripts %}
+  
+{% endblock  %}
     </body>
 </html>
