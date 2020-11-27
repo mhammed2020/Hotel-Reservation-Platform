@@ -7,8 +7,15 @@ Hotels
    {% endblock title %}
 
 {% block content %}
-    
+  <ul>
+     {% for item  in hotels %}
+     <li>
+{{item.hotel_name}} 
 
-<h2>Hotel list </h2> 
+   </li>
+     {% endfor %}
+
+
+  </ul>
 {% endblock content %}
     
