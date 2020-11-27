@@ -8,7 +8,15 @@ Customers
 
 {% block content %}
     
+<ul>
+    {% for item  in customers %}
+    <li>
+{{item.name}} 
 
-<h2>Customers list </h2> 
+  </li>
+    {% endfor %}
+
+
+ </ul>
 {% endblock content %}
     

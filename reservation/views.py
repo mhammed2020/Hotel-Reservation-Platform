@@ -17,7 +17,7 @@ def list_customers(request) :
 
     customers = Customer.objects.all() 
     context = {
-        'hotels':customers
+        'customers':customers
     }
 
     return render(request,'reservation/customers.html',context)
