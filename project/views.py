@@ -1,6 +1,7 @@
 
 from django.http import HttpResponse
+from django.shortcuts import render
 
 def home(request) :
 
-    return HttpResponse ("hello it s me .. django project views")
+    return render (request,'reservation/home.html')
