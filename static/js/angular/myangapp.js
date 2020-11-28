@@ -19,6 +19,7 @@
          $scope.add_new_hotel = function(new_hotel,hotels) {
 
             var hotel = { hotel_name : new_hotel, hotel_city :"Any city"} ;
+            $http.post("/reservation/hotelsapi")
             hotels.push(hotel) ;
 
          } ;
