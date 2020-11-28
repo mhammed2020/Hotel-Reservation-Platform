@@ -16,6 +16,15 @@
             $scope.hotels = response.data;
         }) ;
 
+        $scope.delete_hotel = function(id) {
+            $http.delete("/reservation/hotelsapi/" + id + "/")
+            .then(function() {
+
+            }, function() {
+                alert(" error while deleting a hotel ") ;
+            });
+        }
+
          $scope.add_new_hotel = function(new_hotel,hotels) {
 
             var hotel = { 
