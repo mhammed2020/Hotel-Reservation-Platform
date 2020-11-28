@@ -6,3 +6,4 @@ class HotelSerializer(serializers.ModelSerializer) :
 
     class Meta :
         model = Hotel
+        exclude = []
