@@ -34,7 +34,7 @@
 
         $scope.add_new_customer = function(new_customer,customers) {
 
-            var customer = { name : new_customer, phone_number :"Any phone"} ;
+            var customer = { name : new_customer, phone_number :"78888444231"} ;
             customers.push(customer) ;
 
          } ;
