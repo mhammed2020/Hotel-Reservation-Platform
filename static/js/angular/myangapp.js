@@ -21,8 +21,8 @@
             var hotel = { 
                 hotel_name : new_hotel,
                  hotel_city :"Any city",
-                 total_rooms :"230",
-                 empty_rooms :"23"
+                 total_rooms :230,
+                 empty_rooms :23
                 
                 } ;
             $http.post("/reservation/hotelsapi/",hotel)
