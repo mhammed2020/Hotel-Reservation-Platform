@@ -15,7 +15,7 @@
 
        <script src="{% static 'js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
     </head>
-    <body>
+    <body ng-app="hotelreservation.angapp">
 
         <div class="header-container" style="background-color:#29b9f1;">
 
@@ -66,6 +66,8 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="{% static 'js/main.js' %}"></script>
+        <script src="{% static 'js/angular/myangapp.js' %}"></script>
+
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
 {% block scripts %}
   

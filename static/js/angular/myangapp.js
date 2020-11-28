@@ -1,7 +1,5 @@
-{% block scripts %}
   
 
-<script>
 
    (function() {
       angular.module("hotelreservation.angapp",[]).
@@ -24,5 +22,3 @@
 
    })();
 
-</script>
-{% endblock scripts  %}
