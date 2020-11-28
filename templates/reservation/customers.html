@@ -7,7 +7,35 @@ Customers
    {% endblock title %}
 
 {% block content %}
-    
+
+
+{% verbatim %}
+      
+      
+<div ng-controller="HotelReservation">
+   <h1> List from angular</h1>
+
+   <ul>
+
+      <div ng-repeat="hotel in hotels">
+
+         <li>
+            {{hotel.hotel_name}}
+         </li>
+
+      </div>
+
+   </ul>
+<input type="text" ng-model="new_hotel"/>
+<button ng-click="add_new_hotel(new_hotel,hotels)">Add </button>
+</div>
+{% endverbatim %}
+
+
+
+<h1> List from django</h1>
+
+
 <ul>
     {% for item  in customers %}
     <li>
