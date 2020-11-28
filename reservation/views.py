@@ -10,7 +10,7 @@ def list_hotels(request) :
         'hotels':hotels
     }
 
-    return render(request,'reservation/hotels.html',context)
+    return render(request,'reservation/hotels.html')
 
 
 def list_customers(request) :
