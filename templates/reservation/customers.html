@@ -17,17 +17,17 @@ Customers
 
    <ul>
 
-      <div ng-repeat="hotel in hotels">
+      <div ng-repeat="customer in customers">
 
          <li>
-            {{hotel.hotel_name}}
+            {{customer.name}}
          </li>
 
       </div>
 
    </ul>
-<input type="text" ng-model="new_hotel"/>
-<button ng-click="add_new_hotel(new_hotel,hotels)">Add </button>
+<input type="text" ng-model="new_customer"/>
+<button ng-click="add_new_customer(new_customer,customers)">Add </button>
 </div>
 {% endverbatim %}
 

@@ -24,8 +24,20 @@
     
       function CustomersController($scope) {
 
+        $scope.customers =[
+
+            { name : " medo", phone_number : " 9883452"},
+            { name : " maria", phone_number : " 32168888"},
+
+        ] ;
 
 
+        $scope.add_new_customer = function(new_customer,customers) {
+
+            var customer = { name : new_customer, phone_number :"Any phone"} ;
+            customers.push(customer) ;
+
+         } ;
 
       }
 
