@@ -3,10 +3,11 @@
 
    (function() {
       angular.module("hotelreservation.angapp",[]).
-      controller("HotelReservation", ["$scope",HotelReservation]) ;
+      controller("HotelReservation", ["$scope",HotelReservation])
+      .controller("CustomersController",["$scope",CustomersController]) ;
 
 
-      function HotelReservation($scope) {
+    function HotelReservation($scope) {
 
          $scope.hotels = [
          {hotel_name : "Retz Carlton", hotel_city : "Casa"},
@@ -19,6 +20,17 @@
 
          } ;
       }
+
+    
+      function CustomersController($scope) {
+
+
+
+
+      }
+
+    
+
 
    })();
 
